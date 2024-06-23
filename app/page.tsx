@@ -148,8 +148,8 @@ export default function Home() {
               </div>
             </div>
             <div className={'flex w-full items-center justify-center text-white text-3xl sm:text-5xl'}>
-              <Image alt="hehehe liu liu hehehe"
-                   src={"https://lh5.googleusercontent.com/proxy/N_Cfi5UzncKM6z0q3JQG1MppuUL8f1HnVFY3TNPpArohHJvyW7GnO79YUXKrADx6B1efORGC0NU0PrE-zmu-7FPU277oPufR5zAjTFuMIw"}
+              <img alt="hehehe liu liu hehehe"
+                   src={"hehehe.gif"}
               />
             </div>
           </div>
