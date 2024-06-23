@@ -128,7 +128,7 @@ export default function Home() {
         </div>
       </div>
       {words.length > 0 &&
-          <div id='result' className="absolute h-screen w-screen grid grid-cols-2 z-10 bg-black">
+          <div id='result' className="absolute h-screen w-screen grid grid-rows-2 sm:grid-cols-2 z-10 bg-black">
             <div className={'flex w-full flex-col justify-center items-center text-white text-3xl sm:text-5xl'}>
               <div className={"mb-10"}>
                 {words[Math.floor(Math.random() * words.length)].toUpperCase()} chứ gì
