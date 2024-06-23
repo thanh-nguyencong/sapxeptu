@@ -16,6 +16,88 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .title {
+    display: none;
+  }
+}
+
+@keyframes bounce-horizontal {
+  0%, 100% {
+    transform: translateX(40%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.arrow {
+  animation: bounce-horizontal 1s infinite;
+}
+
+@keyframes title-character {
+  from {
+    transform: translateY(-20vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.title-character {
+  animation-name: title-character;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    stroke-dasharray: 1, 1;
+    stroke-dashoffset: -1px;
+  }
+  50% {
+    stroke-dasharray: 2, 4;
+    stroke-dashoffset: -10px;
+  }
+  100% {
+    stroke-dasharray: 1, 1;
+    stroke-dashoffset: -1px;
+  }
+}
+
+.spin2 {
+  transform-origin: center;
+  animation: spin2 1.5s ease-in-out infinite,
+  spin 2s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes result {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#result {
+  animation-name: result;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
